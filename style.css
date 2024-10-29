@@ -79,6 +79,15 @@ section {
     margin-top: 0.5rem; /* Margen superior para el párrafo */
 }
 
+.nota {
+    background-color: #f0f8ff;
+    border-left: 4px solid; /* Borde a la izquierda */
+    padding: 10px;
+    margin: 10px 0 10px 20px; /* Espacio superior, inferior y a la izquierda */
+    font-style: italic;
+    color: #333;
+}
+
 /* Media query para dispositivos móviles */
 @media (max-width: 600px) {
     .anime {
