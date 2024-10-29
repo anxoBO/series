@@ -6,25 +6,31 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
+    background-color: #eef2f3; /* Fondo claro */
     color: #333;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4a4e69; /* Color oscuro */
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 header {
-    background-color: #333;
+    background-color: #22223b; /* Fondo oscuro para el header */
     color: #fff;
     padding: 1rem;
+    width: 100%;
     text-align: center;
-}
-
-h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 0.8rem 0 0.5rem; /* Aumentamos el margen superior a 0.8rem */
+    border-radius: 8px 8px 0 0; /* Esquinas redondeadas */
 }
 
 section {
@@ -35,47 +41,53 @@ section {
 
 /* Estilos para cada serie */
 .anime {
-    background-color: #fff;
+    background-color: #ffffff; /* Fondo blanco para las tarjetas */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más suave */
     overflow: hidden;
     display: flex;
-    margin: 20px 0;
+    margin: 20px 0; /* Margen entre tarjetas */
     padding: 20px;
-    align-items: flex-start;
+    transition: transform 0.2s; /* Efecto de transformación suave */
+}
+
+.anime:hover {
+    transform: translateY(-5px); /* Efecto al pasar el ratón */
 }
 
 /* Estilo para la imagen */
 .anime img {
-    width: 150px;
+    width: 150px; /* Ajustar el tamaño de la imagen */
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px; /* Esquinas redondeadas */
     margin-right: 20px;
 }
 
 /* Estilos para el contenido */
 .anime h2 {
-    margin-top: 0.8rem;
-    margin-left: 2 px;
-    margin-right: 5px; /* Margen superior */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    color: #4a4e69; /* Color del título */
+    margin-top: 0.8px;/* Margen */
+    margin-right: 9px;
+
 }
 
 .anime p {
     font-size: 1rem;
-    color: #555;
-    text-align: justify;
-    margin-top: 0.5rem;
-    margin-left: 5px; /* Margen superior para el párrafo */
+    color: #555; /* Color del texto */
+    text-align: justify; /* Justificar el texto */
+    margin-top: 0.5rem; /* Margen superior para el párrafo */
 }
 
+/* Media query para dispositivos móviles */
 @media (max-width: 600px) {
     .anime {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: column; /* Cambiar a columna en dispositivos móviles */
+        align-items: center; /* Centrar contenido */
+        text-align: center; /* Centrar texto */
     }
 
     .anime img {
-        margin: 0 0 15px 0;
+        margin: 0 0 15px 0; /* Margen en la imagen */
     }
 }
