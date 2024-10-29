@@ -1,0 +1,81 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0.8rem 0 0.5rem; /* Aumentamos el margen superior a 0.8rem */
+}
+
+section {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Estilos para cada serie */
+.anime {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    margin: 20px 0;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+/* Estilo para la imagen */
+.anime img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+/* Estilos para el contenido */
+.anime h2 {
+    margin-top: 0.8rem;
+    margin-left: 2 px;
+    margin-right: 5px; /* Margen superior */
+}
+
+.anime p {
+    font-size: 1rem;
+    color: #555;
+    text-align: justify;
+    margin-top: 0.5rem;
+    margin-left: 5px; /* Margen superior para el párrafo */
+}
+
+@media (max-width: 600px) {
+    .anime {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .anime img {
+        margin: 0 0 15px 0;
+    }
+}
